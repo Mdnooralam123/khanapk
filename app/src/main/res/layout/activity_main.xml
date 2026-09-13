@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A1410">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/bottomArea"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="K"
+            android:textColor="#0A1410"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:background="@drawable/circle_green" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="khanxMULTITOKEN"
+                android:textColor="#E8F5EE"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live JWT capture · IND"
+                android:textColor="#7A9A87"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="6dp"
+            android:text="● 24/7"
+            android:textColor="#4ADE80"
+            android:textSize="11sp"
+            android:background="@drawable/pill_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/card_dark"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="YOUR KEY"
+                android:textColor="#7A9A87"
+                android:textSize="11sp"
+                android:letterSpacing="0.3" />
+
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh"
+                android:backgroundTint="#1A2B22"
+                android:textColor="#E8F5EE"
+                android:textSize="11sp"
+                android:minWidth="0dp"
+                android:paddingHorizontal="14dp" />
+
+            <Button
+                android:id="@+id/btnNewKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="New key"
+                android:backgroundTint="#1A2B22"
+                android:textColor="#E8F5EE"
+                android:textSize="11sp"
+                android:minWidth="0dp"
+                android:paddingHorizontal="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="— — — — —"
+            android:textColor="#4ADE80"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:shadowColor="#4ADE80"
+            android:shadowRadius="18" />
+
+        <TextView
+            android:id="@+id/tvCapturedCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Region IND · captured 0 accounts"
+            android:textColor="#A8C4B4"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvLiveStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="6dp"
+            android:text="● Stopped"
+            android:textColor="#FFC107"
+            android:textSize="11sp"
+            android:background="@drawable/pill_dark" />
+
+        <TextView
+            android:id="@+id/tvLastUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="6dp"
+            android:text="Last update: —"
+            android:textColor="#7A9A87"
+            android:textSize="11sp"
+            android:background="@drawable/pill_dark" />
+
+        <Button
+            android:id="@+id/btnPickFolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="PICK FF FOLDER (Android 11+)"
+            android:backgroundTint="#22C55E"
+            android:textColor="#0A1410"
+            android:textStyle="bold"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/waitingCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/card_dark"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingVertical="48dp"
+        android:paddingHorizontal="20dp">
+
+        <View
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/circle_glow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Waiting for tokens...&#10;Tap START to begin capturing."
+            android:textColor="#E8F5EE"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CAPTURED JWT (1 per account)"
+        android:textColor="#4ADE80"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTokens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:nestedScrollingEnabled="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="khanxMULTITOKEN · auto-refresh every 10s"
+        android:textColor="#4A6A5A"
+        android:textSize="10sp" />
+</LinearLayout>
+</ScrollView>
+
+<LinearLayout
+    android:id="@+id/bottomArea"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#0D1A14"
+    android:elevation="16dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDeploy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="DEPLOY CONFIG"
+            android:backgroundTint="#4ADE80"
+            android:textColor="#0A1410"
+            android:textStyle="bold"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnStartStop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:layout_height="wrap_content"
+            android:text="▶ START"
+            android:backgroundTint="#4ADE80"
+            android:textColor="#0A1410"
+            android:textStyle="bold"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOverlay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="OVERLAY"
+            android:backgroundTint="#22C55E"
+            android:textColor="#0A1410"
+            android:textStyle="bold"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            android:backgroundTint="#FFC107"
+            android:textColor="#0A1410"
+            android:textStyle="bold"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

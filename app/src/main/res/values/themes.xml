@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.KhanMultiToken" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:statusBarColor">#0A1410</item>
+        <item name="android:navigationBarColor">#0D1A14</item>
+        <item name="android:windowBackground">#0A1410</item>
+        <item name="colorPrimary">#4ADE80</item>
+        <item name="colorAccent">#4ADE80</item>
+    </style>
+</resources>
